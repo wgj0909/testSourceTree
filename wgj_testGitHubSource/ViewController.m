@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(100,100, 100, 30);
+    label.text = @"你是谁";
+    label.textColor = [UIColor orangeColor];
+    label.font = [UIFont systemFontOfSize:12];
+    [self.view addSubview:label];
 }
 
 
